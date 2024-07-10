@@ -1,0 +1,6 @@
+Interestingly enough, all 3 models capped out between 77.1 and 77.3 accuracy.  The biggest difference was not in which model I was using, but in the method of EDA.
+There was a specific subset of columns which invariably led to a 1.5-2 percent increase when they were discarded.  Any other combination of columns (including all of them)
+led to lesser results.  As to which I would pick?  For this instance, I would have to go with the Random Forest Classifier.  It was helped the least by modification of it's
+hyper parameters, and instead started at it's maximum accuracy.  Given this fact alone, it seems best suited for this set, but the difference is negligible with appropriate
+hypertuning.  Another interesting note, the confusion matrices tended to show an even distribution of errors for the default settings on each model, while hypertuning skewed
+their errors to one side or the other.  Potentially useful for situations where it is better to fail up, but otherwise, not necessarily useful for this exercise.
